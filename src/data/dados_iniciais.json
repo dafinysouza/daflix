@@ -1,0 +1,181 @@
+{
+  "categorias": [
+    {
+      "titulo": "Front End",
+      "link": "https://www.alura.com.br/formacao-front-end",
+      "cor": "#FFCA3A",
+      "link_extra": {
+        "text": "Formação de Front End na Alura",
+        "url": "https://www.alura.com.br/cursos-online-front-end"
+      },
+      "videos": [
+        {
+          "titulo": "O que faz uma desenvolvedora front-end? #HipstersPontoTube",
+          "url": "https://www.youtube.com/watch?v=ZY3-MFxVdEw"
+        },
+        {
+          "titulo": "SEO com React",
+          "url": "https://www.youtube.com/watch?v=c8mVlakBESE"
+        },
+        {
+          "titulo": "Componentização com VanillaJS #AluraMais",
+          "url": "https://www.youtube.com/watch?v=LatCKpcOMak"
+        },
+        {
+          "titulo": "Pare de chutar e aprenda a display: inline #01",
+          "url": "https://www.youtube.com/watch?v=5PS6ku8NzIE"
+        },
+        {
+          "titulo": "Template String: Interpolando strings com JavaScript #AluraMais",
+          "url": "https://www.youtube.com/watch?v=ORI_HTXaIw0"
+        },
+        {
+          "titulo": "Qual é a melhor linguagem de programação? #HipstersPontoTube",
+          "url": "https://www.youtube.com/watch?v=Uh-GNH-t89w"
+        },
+        {
+          "titulo": "Novidades do Angular v9",
+          "url": "https://www.youtube.com/watch?v=34uHo7hFmG0"
+        },
+        {
+          "titulo": "Base para aprender os frameworks",
+          "url": "https://www.youtube.com/watch?v=QzDjdlF1BQI"
+        }
+      ]
+    },
+    {
+      "titulo": "Design",
+      "cor": "#FF499E",
+      "link_extra": {
+        "text": "Cursos de Design na Alura",
+        "url": "https://www.alura.com.br/cursos-online-programacao"
+      },
+      "videos": [
+        {
+          "titulo": "Coders4Tips - S01E04: GitHub CLI - Uma Nova Experiência no Github!",
+          "url": "https://www.youtube.com/watch?v=6o6-bKOZOEY"
+        },
+        {
+          "titulo": "Design UX/UI, Home Office, Dev em Cidade Pequena, Portfólio, Insegurança",
+          "url": "https://www.youtube.com/watch?v=RlK8nu_YErc"
+        },
+        {
+          "titulo": "O que é UX | User Experience?",
+          "url": "https://www.youtube.com/watch?v=WAi6ixIfdd4"
+        },
+        {
+          "titulo": "UX (User eXperience) // Dicionário do Programador",
+          "url": "https://www.youtube.com/watch?v=U1kKWqlfxnk"
+        }
+      ]
+    },
+    {
+      "titulo": "Arte",
+      "cor": "#1982C4",
+      "link_extra": {
+        "text": "Cursos de Arte na Alura",
+        "url": "https://www.alura.com.br/formacao-data-science"
+      },
+      "videos": [
+        {
+          "titulo": "O que é Data Science?",
+          "url": "https://www.youtube.com/watch?v=5b9Z8toVaAU&t=9s"
+        },
+        {
+          "titulo": "A História da Arte Contada para Artistas",
+          "url": "https://www.youtube.com/watch?v=6-WaHhmLu18"
+        },
+        {
+          "titulo": "O que um game pode nos ensinar sobre arte?",
+          "url": "https://www.youtube.com/watch?v=RF2mioXuYzE"
+        },
+        {
+          "titulo": "Topia 2019 | Feito é melhor que Perfeito, palestra com Letícia Gillett",
+          "url": "https://www.youtube.com/watch?v=fRrpiIsDgYU"
+        }
+      ]
+    },
+    {
+      "titulo": "Filmes",
+      "cor": "#FF595E",
+      "videos": [
+        {
+          "titulo": "Interestellar",
+          "url": "https://www.youtube.com/watch?v=frD_IiY_A3E"
+        },
+        {
+          "titulo": "Alita: Battle Angel",
+          "url": "https://www.youtube.com/watch?v=uYIIpQ5hLFw"
+        },
+        {
+          "titulo": "Alice in Wonderland",
+          "url": "https://www.youtube.com/watch?v=JRlo6n4jh5o&t=14s"
+        },
+        {
+          "titulo": "Doctor Strange",
+          "url": "https://www.youtube.com/watch?v=9Golt91teTQ"
+        }
+      ]
+    },
+    {
+      "titulo": "Jogos",
+      "cor": "#FA7921",
+      "link_extra": {
+        "text": "Formação de Jogos na Alura",
+        "url": "https://www.alura.com.br/formacao-jogos-unity"
+      },
+      "videos": [
+        {
+          "titulo": "God of War 4",
+          "url": "https://www.youtube.com/watch?v=FyIwEFXOcaE"
+        },
+        {
+          "titulo": "World of Warcraft",
+          "url": "https://www.youtube.com/watch?v=qtDfA8gU9ik"
+        },
+        {
+          "titulo": "God of War 4",
+          "url": "https://www.youtube.com/watch?v=FyIwEFXOcaE"
+        },
+        {
+          "titulo": "Resident Evil 8",
+          "url": "https://www.youtube.com/watch?v=JSapXD9vxYA"
+        },
+        {
+          "titulo": "Pokémon Let's Go Pikachu/Eevee",
+          "url": "https://www.youtube.com/watch?v=L56q_k2ydrs"
+        }
+      ]
+    },
+    {
+      "titulo": "Aprendendo a aprender",
+      "cor": "#6A4C93",
+      "link_extra": {
+        "text": "Curso sobre aprendizado na Alura",
+        "url": "https://alura.com.br/curso-online-aprender-a-aprender-tecnicas-para-seu-autodesenvolvimento"
+      },
+      "videos": [
+        {
+          "titulo": "Como estudar melhor?",
+          "url": "https://www.youtube.com/watch?v=Is6c9KSGCbk&feature=youtu.be"
+        },
+        {
+          "titulo": "Faculdade",
+          "url": "https://www.youtube.com/watch?v=jw06H8esyzQ&feature=youtu.be"
+        },
+        {
+          "titulo": "Frameworks",
+          "url": "https://www.youtube.com/watch?v=QzDjdlF1BQI"
+        },
+        {
+          "titulo": "A mágica do Aprendizado",
+          "url": "https://www.youtube.com/watch?v=oTEXzpfEpPY"
+        },
+        {
+          "titulo": "Como aprender a programar?",
+          "url": "https://www.youtube.com/watch?v=MwCx2qKdbDw&feature=youtu.be"
+        }
+      ]
+    }
+  ]
+}
