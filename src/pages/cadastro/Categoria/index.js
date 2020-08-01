@@ -1,13 +1,14 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
-import PageDefault from "../../../components/PageDefault";
-import FormField from "../../../components/FormField";
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
+import PageDefault from '../../../components/PageDefault';
+import FormField from '../../../components/FormField';
+import Button from '../../../components/Button';
 
 function CadastroCategoria() {
   const valoresIniciais = {
-    nome: "",
-    descricao: "",
-    cor: "",
+    nome: '',
+    descricao: '',
+    cor: '',
   };
   const [categorias, setCategorias] = useState([]);
   const [values, setValues] = useState(valoresIniciais);
@@ -15,13 +16,15 @@ function CadastroCategoria() {
   function setValue(chave, valor) {
     setValues({
       ...values,
-      [chave]: valor, // nome: 'valor'
+      [chave]: valor,
     });
   }
 
   function handleChange(infosDoEvento) {
-    const { getAttribute, value } = infosDoEvento.target;
-    setValue(getAttribute("name"), value);
+    setValue(
+      infosDoEvento.target.getAttribute('name'),
+      infosDoEvento.target.value,
+    );
   }
 
   return (
@@ -46,7 +49,7 @@ function CadastroCategoria() {
 
         <FormField
           label="Descrição:"
-          type="text"
+          type="textarea"
           name="descricao"
           value={values.descricao}
           onChange={handleChange}
@@ -60,13 +63,11 @@ function CadastroCategoria() {
           onChange={handleChange}
         />
 
-        <button>Cadastrar</button>
+        <Button>Cadastrar</Button>
       </form>
 
       <ul>
-        {categorias.map((categoria, indice) => {
-          return <li key={`${categoria}${indice}`}>{categoria.nome}</li>;
-        })}
+        {categorias.map((categoria) => <li key={`${categoria.nome}`}>{categoria.nome}</li>)}
       </ul>
 
       <Link to="/">Ir para home</Link>
