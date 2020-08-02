@@ -1,15 +1,18 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
 import PageDefault from '../../../components/PageDefault';
 import FormField from '../../../components/FormField';
 import Button from '../../../components/Button';
 import useForm from '../../../hooks/useForm';
+import categoriasRepository from '../../../repositories/categorias';
 
 function CadastroCategoria() {
   const valoresIniciais = {
-    nome: '',
-    descricao: '',
+    titulo: '',
     cor: '',
+    link_extra: {
+      text: '',
+      url: '',
+    },
   };
 
   const { handleChange, values, clearForm } = useForm(valoresIniciais);
@@ -30,6 +33,14 @@ function CadastroCategoria() {
       });
   }, []);
 
+  useEffect(() => {
+    categoriasRepository
+      .getAll()
+      .then((categorias) => {
+        setCategorias(categorias);
+      });
+  }, []);
+
   return (
     <PageDefault>
       <h1>Cadastro de Categoria</h1>
@@ -37,24 +48,28 @@ function CadastroCategoria() {
       <form
         onSubmit={function handleSubmit(infosDoEvento) {
           infosDoEvento.preventDefault();
+
+          categoriasRepository.create({
+            titulo: values.titulo,
+            cor: values.cor,
+            link_extra: {
+              text: values.texto,
+              url: values.url,
+            },
+          })
+            .then(() => {
+              console.log('Cadastrou com sucesso!');
+            });
           setCategorias([...categorias, values]);
 
           clearForm();
         }}
       >
         <FormField
-          label="Nome da Categoria"
+          label="Nome"
           type="text"
-          name="nome"
-          value={values.nome}
-          onChange={handleChange}
-        />
-
-        <FormField
-          label="Descrição"
-          type="textarea"
-          name="descricao"
-          value={values.descricao}
+          name="titulo"
+          value={values.titulo}
           onChange={handleChange}
         />
 
@@ -66,14 +81,39 @@ function CadastroCategoria() {
           onChange={handleChange}
         />
 
+        <h3>Link extra da categoria</h3>
+        <FormField
+          label="Nome"
+          type="text"
+          name="texto"
+          value={values.texto}
+          onChange={handleChange}
+        />
+
+        <FormField
+          label="URL"
+          type="text"
+          name="url"
+          value={values.url}
+          onChange={handleChange}
+        />
+
+        {/* <FormField
+          label="Descrição"
+          type="textarea"
+          name="descricao"
+          value={values.descricao}
+          onChange={handleChange}
+        /> */}
+
         <Button>Cadastrar</Button>
       </form>
 
+      <h2>Categorias cadastradas:</h2>
       <ul>
         {categorias.map((categoria) => <li key={`${categoria.titulo}`}>{categoria.titulo}</li>)}
       </ul>
 
-      <Link to="/">Ir para home</Link>
     </PageDefault>
   );
 }
